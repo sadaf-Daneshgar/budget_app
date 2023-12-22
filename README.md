@@ -122,6 +122,8 @@ If you like this project, kindly drop a start ⭐️ for the [repository](https:
 
 - I would like to express my heartfelt gratitude to [**Microverse**](https://www.microverse.org/?grsf=mohammad-a-nbtazu) for the invaluable learning experience they have provided.
 
+Original design idea by [Gregoire Vella in Behance](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=).
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📜 License <a name="license"></a>
