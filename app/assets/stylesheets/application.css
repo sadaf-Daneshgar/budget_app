@@ -12,7 +12,6 @@ body {
 
 a {
   text-decoration: none;
-  color: #fff;
 }
 
 header {
@@ -22,12 +21,40 @@ header {
   color: #fff;
   padding: 10px 20px;
   background-color: #3778c2;
-  border-bottom: 1px solid #e5e5e5;
+}
+
+.btn {
+  color: #fff;
+  background-color: #3778c2;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
 }
 
 .back-icon::before {
   content: '\2190';
   font-size: 2.5rem;
+  color: #fff;
+}
+
+.links {
+  margin-top: 10px;
+  display: flex;
+  gap: 12px;
+  color: #434b54;
+}
+
+.links a:first-child {
+  border: 1px solid #007bff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 30px;
+}
+
+.links a:last-of-type {
+  border: 1px solid #007bff;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .email-input,
