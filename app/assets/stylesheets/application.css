@@ -92,3 +92,106 @@ header {
   cursor: pointer;
   margin: 20px;
 }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  font-size: 18px;
+}
+
+/* footer a {
+  padding: 20px;
+  border-radius: 4px;
+} */
+
+footer a#login {
+  background-color: #007bff;
+  width: 100%;
+  color: #fff;
+}
+
+footer a#signup {
+  background-color: #fff;
+  color: #434b54;
+  width: 100%;
+}
+
+.budget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15rem;
+  color: #434b54;
+}
+
+.add-category {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: #5fb523;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  color: #fff;
+  padding: 20px;
+  font-size: 18px;
+}
+
+span {
+  border: 1px solid #fff;
+  padding: 10px;
+}
+
+.field {
+  border: none;
+  width: 100%;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+
+input[type="submit"] {
+  background-color: #5fb523;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 8px 8rem;
+  font-size: 18px;
+}
+
+/* part of category */
+.category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.category-link {
+  width: 100%;
+  color: #434b54;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.category-link:hover {
+  background-color: #f4f4f4;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category-icon {
+  font-size: 20px;
+}
