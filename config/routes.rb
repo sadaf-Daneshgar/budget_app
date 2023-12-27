@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   resources :users do
     resources :categories do
-      resources :transactions
+      resources :expenses
     end
   end
   # Defines the root path route ("/")

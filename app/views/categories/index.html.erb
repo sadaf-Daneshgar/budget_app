@@ -1,20 +1,21 @@
 <header>
  <%= link_to root_path, class: "back-icon" do %></span><% end %>
-  <h2>CATEGORIES</h2>
+  <h2>CATEGORIES 📁</h2>
+  <i class="fa fa-search"></i>
 </header>
   <div class="category-list">
     <% @categories.each do |category| %>
-     <%= link_to user_category_transactions_path(@user, category), class: "category-link" do %>
+     <%= link_to user_category_expenses_path(@user, category), class: "category-link" do %>
       <div class="category">
         <div class="category-icon">
           <%= category.icon %>
         </div>
         <div>
           <p><%= category.name %></p>
-          <p><%= category.created_at.strftime("%B %d, %Y") %></p>
+          <p><%= category.created_at.strftime("%m/%d/%Y") %></p>
         </div>
         <div class="amount">
-          <p>$<%= category.transactions.sum(:amount) %></p>
+          <p><%= number_to_currency(category.expenses.sum(:amount)) %></p>
         </div>
       </div>
     <% end %>

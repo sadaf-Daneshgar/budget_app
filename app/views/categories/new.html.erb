@@ -2,12 +2,18 @@
   <%= link_to root_path, class: "back-icon" do %></span><% end %>
   <h2>ADD CATEGORY</h2>
 </header>
-<div>
+<div class="form">
   <%= form_with(model: [@user, @category], local: true, method: :post) do |f| %>
-    <%= f.text_field :name, placeholder: "Name", class: "field" %> <br />
-    <%= f.text_field :icon, placeholder: "Icon", class: "field" %> <br />
+    <div>
+    <%= f.label :name %> <br />
+    <%= f.text_field :name, autocomplete: "off" %>
+  </div>
+  <div>
+    <%= f.label :icon %> <br />
+    <%= f.text_field :icon %>
+  </div>
+  </div> 
    <div class="add-category">
     <%= f.submit "Add Category" %>
    </div>
   <% end %>
-</div> 
