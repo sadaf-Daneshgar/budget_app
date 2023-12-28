@@ -1,24 +1,20 @@
 <header>
- <%= link_to root_path, class: "back-icon" do %></span><% end %>
+  <%= link_to root_path, class: "back-icon" do %></span><% end %>
   <h2><%= @category.name %></h2>
   <p>$ <%= @expenses.sum(:amount) %></p>
 </header>
+
+<% @expenses.each do |expense| %>
+  <div class="expense-item">
+    <div>
+      <p><%= expense.name %></p>
+      <p class="expense-date"><%= expense.created_at.strftime("%m/%d/%Y") %></p>
+    </div>
+    <p>$<%= expense.amount %></p>
+    <p><%= expense.category.name %></p>
+  </div>
+<% end %>
+
 <%= link_to new_user_category_expense_path(@user, @category), class: "add-transaction" do %>
   <span>Add Transaction</span>
-<% end %>
-<div class="transaction-list">
-  <% @expenses.each do |expense| %>
-    <div class="transaction">
-      <div class="transaction-icon">
-        <%= expense.icon %>
-      </div>
-      <div>
-        <p><%= expense.name %></p>
-        <p><%= expense.created_at.strftime("%m/%d/%Y") %></p>
-      </div>
-      <div class="amount">
-        <%= expense.amount %>
-      </div>
-    </div>
-</div>
 <% end %>

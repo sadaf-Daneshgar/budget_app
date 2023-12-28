@@ -18,6 +18,6 @@
     
     <%= f.label :category_id %>
     <%= f.collection_select :category_id, @categories, :id, :name %> <br />
-    <%= f.submit "Add Transaction" %>
+    <%= f.submit class: "button" %>
   <% end %>
 </div>

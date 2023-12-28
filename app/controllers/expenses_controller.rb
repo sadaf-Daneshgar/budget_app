@@ -2,7 +2,7 @@ class ExpensesController < ApplicationController
   def index
     @user = User.find(params[:user_id])
     @category = Category.find(params[:category_id])
-    @expenses = @category.expenses
+    @expenses = @user.expenses.where(category: @category)
   end
 
   def new
@@ -14,8 +14,9 @@ class ExpensesController < ApplicationController
 
   def create
     @user = User.find(params[:user_id])
-    @category = Category.find(params[:category_id])
+    @category = Category.find(params[:expense][:category_id])
     @expense = @category.expenses.build(expense_params)
+    @expense.author = @user
 
     if @expense.save
       redirect_to user_category_expenses_path(@user, @category), notice: 'Expense was successfully created.'
@@ -28,6 +29,6 @@ class ExpensesController < ApplicationController
   private
 
   def expense_params
-    params.require(:expense).permit(:category_id, :name, :amount, :transaction_date)
+    params.require(:expense).permit(:name, :amount, :transaction_date, :category_id)
   end
 end

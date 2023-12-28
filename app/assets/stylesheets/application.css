@@ -45,14 +45,14 @@ header {
 }
 
 .links a:first-child {
-  border: 1px solid #007bff;
+  border: 1px solid #3778c2;
   padding: 10px;
   border-radius: 5px;
   margin-left: 30px;
 }
 
 .links a:last-of-type {
-  border: 1px solid #007bff;
+  border: 1px solid #3778c2;
   padding: 10px;
   border-radius: 5px;
 }
@@ -105,7 +105,7 @@ footer {
 }
 
 footer a#login {
-  background-color: #007bff;
+  background-color: #3778c2;
   width: 100%;
   color: #fff;
   padding: 20px;
@@ -130,7 +130,6 @@ footer a#signup {
 }
 
 input[type="submit"] {
-  background-color: #5fb523;
   color: #fff;
   padding: 10px;
   border: none;
@@ -150,6 +149,10 @@ input[type="submit"] {
   width: 100%;
   color: #fff;
   padding: 20px;
+}
+
+.button {
+  background-color: #5fb523;
 }
 
 .add-category input[type="submit"],
@@ -190,7 +193,7 @@ span {
 }
 
 .form {
-  width: 400px;
+  width: 350px;
   margin: 20px auto;
   padding: 20px;
   border: 1px solid #ccc;
@@ -200,19 +203,36 @@ span {
 }
 
 input[type="text"] {
-  width: 100%;
-  padding: 20px;
+  /* width: 100%; */
+  padding: 18px;
   border: none;
+  outline: none;
   margin-bottom: 10px;
+  border-radius: 8px;
   box-sizing: border-box;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 select {
-  width: 100%;
+  width: 60%;
   padding: 10px;
   margin-bottom: 10px;
+  outline: none;
   box-sizing: border-box;
+  border-radius: 8px;
   border: none;
   box-shadow: 0 0 10px #0000001a;
+}
+
+.expense-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expense-date {
+  color: #888;
 }

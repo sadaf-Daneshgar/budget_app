@@ -3,17 +3,17 @@
   <h2>ADD CATEGORY</h2>
 </header>
 <div class="form">
-  <%= form_with(model: [@user, @category], local: true, method: :post) do |f| %>
+    <%= form_with(model: [@user, @category], local: true, method: :post) do |f| %>
     <div>
     <%= f.label :name %> <br />
     <%= f.text_field :name, autocomplete: "off" %>
-  </div>
-  <div>
+    </div>
+    <div>
     <%= f.label :icon %> <br />
     <%= f.text_field :icon %>
   </div>
-  </div> 
-   <div class="add-category">
-    <%= f.submit "Add Category" %>
+   <div>
+    <%= f.submit class: "button" %>
    </div>
   <% end %>
+</div> 
