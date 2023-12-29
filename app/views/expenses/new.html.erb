@@ -1,5 +1,5 @@
 <header>
-  <%= link_to root_path, class: "back-icon" do %></span><% end %>
+   <%= link_to user_category_expenses_path(@user, @category), class: "back-icon" do %></span><% end %>
   <h2>NEW TRANSACTION 💰</h2>
   <i class="fa fa-search"></i>
 </header>
@@ -18,6 +18,6 @@
     
     <%= f.label :category_id %>
     <%= f.collection_select :category_id, @categories, :id, :name %> <br />
-    <%= f.submit class: "button" %>
+    <%= f.submit "Save", class: "button" %>
   <% end %>
 </div>
