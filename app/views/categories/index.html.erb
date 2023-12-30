@@ -8,7 +8,7 @@
      <%= link_to user_category_expenses_path(@user, category), class: "category-link" do %>
       <div class="category">
         <div class="category-icon">
-          <%= category.icon %>
+          <img src="<%= category.icon %>" alt="<%= category.name %>">
         </div>
         <div>
           <p><%= category.name %></p>
@@ -21,6 +21,6 @@
     <% end %>
     <% end %>
   </div>
-  <%= link_to new_user_category_path(@user), class: "add-category" do %>
-    <span>Add Category</span>
+ <%= link_to new_user_category_path(@user), class: "add-category" do %>
+  <span>Add Category</span>
 <% end %>

@@ -76,5 +76,5 @@ Rails.application.configure do
   config.action_controller.raise_on_missing_callback_actions = true
 
    # ADDITION - Allow unconfirmed access for 2 days
-   config.allow_unconfirmed_access_for = 2.days
+  #  config.allow_unconfirmed_access_for = 2.days
 end
