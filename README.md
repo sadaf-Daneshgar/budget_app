@@ -6,6 +6,7 @@
 - [💰 Budget App](#about-project)
 - [🛠 Built With](#built-with)
 - [Key Features](#key-features)
+- [🚀 Live Demo ](#-live-demo-)
 - [Future Features](#future-features)
 - [💻 Getting Started](#getting-started)
 - [Setup](#setup)
@@ -33,6 +34,15 @@ This is a budget app that allows users to track their expenses and incomes. User
 - [ ] User can create, edit, and delete transactions.
 - [ ] User can view a summary of their transactions, including the total balance, total income, and total expenses.
 - [ ] User can view a list of all their transactions, sorted by date.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- ✅ Click [here](https://react-capstone-yu30.onrender.com/) to see the project
+- ✅ Click [here](https://drive.google.com/file/d/1gBibLP7Bis7F4Y52T1bZ00zUceLGL6ti/view?usp=sharing) to see the video presentation.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
