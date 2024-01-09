@@ -39,7 +39,7 @@ This is a budget app that allows users to track their expenses and incomes. User
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- ✅ Click [here](https://react-capstone-yu30.onrender.com/) to see the project
+- ✅ Click [here](https://budget-app-zipl.onrender.com) to see the project
 - ✅ Click [here](https://drive.google.com/file/d/1gBibLP7Bis7F4Y52T1bZ00zUceLGL6ti/view?usp=sharing) to see the video presentation.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
