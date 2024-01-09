@@ -6,6 +6,7 @@
 - [💰 Budget App](#about-project)
 - [🛠 Built With](#built-with)
 - [Key Features](#key-features)
+- [🚀 Live Demo ](#-live-demo-)
 - [Future Features](#future-features)
 - [💻 Getting Started](#getting-started)
 - [Setup](#setup)
@@ -33,6 +34,15 @@ This is a budget app that allows users to track their expenses and incomes. User
 - [ ] User can create, edit, and delete transactions.
 - [ ] User can view a summary of their transactions, including the total balance, total income, and total expenses.
 - [ ] User can view a list of all their transactions, sorted by date.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- ✅ Click [here](https://budget-app-zipl.onrender.com) to see the project
+- ✅ Click [here](https://drive.google.com/file/d/1gBibLP7Bis7F4Y52T1bZ00zUceLGL6ti/view?usp=sharing) to see the video presentation.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
@@ -121,6 +131,8 @@ If you like this project, kindly drop a start ⭐️ for the [repository](https:
 **I would like to thank the following individuals and organizations for their contribution to this project.**
 
 - I would like to express my heartfelt gratitude to [**Microverse**](https://www.microverse.org/?grsf=mohammad-a-nbtazu) for the invaluable learning experience they have provided.
+
+Original design idea by [Gregoire Vella in Behance](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
