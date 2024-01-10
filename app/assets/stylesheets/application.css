@@ -1,21 +1,3 @@
-@font-face {
-  font-family: 'Proxima Nova';
-  src:
-    url('path-to-your-font/ProximaNova-Regular.woff2') format('woff2'),
-    url('path-to-your-font/ProximaNova-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Proxima Nova';
-  src:
-    url('path-to-your-font/ProximaNova-Bold.woff2') format('woff2'),
-    url('path-to-your-font/ProximaNova-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-}
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -23,13 +5,14 @@
 }
 
 body {
-  font-family: 'Proxima Nova Light', Arial, sans-serif;
+  font-family: 'Proxima Nova Light', sans-serif;
   background-color: #f4f4f4;
   color: #434b54;
 }
 
 h1,
 h2 {
+  font-family: 'Proxima Nova', sans-serif;
   font-weight: bold;
 }
 
@@ -39,7 +22,8 @@ a {
 
 header {
   display: flex;
-  font-family: 'Proxima Nova Bold', Arial, sans-serif;
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: bold;
   justify-content: space-between;
   align-items: center;
   color: #fff;
@@ -53,7 +37,8 @@ header {
   border: none;
   font-size: 1.3rem;
   cursor: pointer;
-  font-family: 'Proxima Nova Bold', Arial, sans-serif;
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: bold;
 }
 
 .back-icon::before {
@@ -271,4 +256,15 @@ select {
 .menu-icon {
   font-size: 24px;
   cursor: pointer;
+}
+
+.name {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: normal;
+  color: #888;
+}
+
+.amount {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: bold;
 }

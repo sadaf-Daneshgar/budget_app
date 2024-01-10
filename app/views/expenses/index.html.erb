@@ -10,7 +10,7 @@
       <p><%= expense.name %></p>
       <p class="expense-date"><%= expense.created_at.strftime("%m/%d/%Y") %></p>
     </div>
-    <p>$<%= expense.amount %></p>
+    <p class="amount">$<%= expense.amount %></p>
     <p><%= expense.category.name %></p>
   </div>
 <% end %>
