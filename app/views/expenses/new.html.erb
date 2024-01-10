@@ -4,6 +4,7 @@
   <i class="fa fa-search"></i>
 </header>
 
+<div class='category-list'>
 <div class="form">
   <%= form_with(model: [@user, @category, @expense], local: true) do |f| %>
   <div>
@@ -20,4 +21,6 @@
     <%= f.collection_select :category_id, @categories, :id, :name %> <br />
     <%= f.submit "Save", class: "button" %>
   <% end %>
+</div>
+
 </div>

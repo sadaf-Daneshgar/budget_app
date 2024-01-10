@@ -4,7 +4,8 @@
   <p>$ <%= @expenses.sum(:amount) %></p>
 </header>
 
-<% @expenses.each do |expense| %>
+<div class='category-list'>
+  <% @expenses.each do |expense| %>
   <div class="expense-item">
     <div>
       <p><%= expense.name %></p>
@@ -18,3 +19,4 @@
 <%= link_to new_user_category_expense_path(@user, @category), class: "add-transaction" do %>
   <span>Add Transaction</span>
 <% end %>
+</div>

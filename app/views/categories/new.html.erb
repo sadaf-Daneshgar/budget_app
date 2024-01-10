@@ -2,7 +2,8 @@
   <%= link_to user_categories_path(@user), class: "back-icon" do %></span><% end %>
   <h2>ADD CATEGORY</h2>
 </header>
-<div class="form">
+<div class='category-list'>
+  <div class="form">
     <%= form_with(model: [@user, @category], local: true, method: :post) do |f| %>
     <div>
     <%= f.label :name %> <br />
@@ -17,3 +18,4 @@
    </div>
   <% end %>
 </div> 
+</div>

@@ -130,13 +130,13 @@ footer a#signup {
   border-radius: 4px;
 }
 
-.budget {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 18rem;
-  color: #434b54;
+.main {
+  background-image: url('business-budget.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
 }
 
 input[type="submit"] {
@@ -178,6 +178,11 @@ span {
   flex-direction: column;
   gap: 10px;
   padding: 10px;
+  background-image: url('bu.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
 }
 
 .category-link {
@@ -258,13 +263,13 @@ select {
   cursor: pointer;
 }
 
-.name {
-  font-family: 'Proxima Nova', sans-serif;
-  font-weight: normal;
-  color: #888;
-}
-
 .amount {
   font-family: 'Proxima Nova', sans-serif;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    background-image: url('budgat.jpg');
+  }
 }
