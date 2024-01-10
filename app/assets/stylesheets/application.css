@@ -241,3 +241,16 @@ select {
 .expense-date {
   color: #888;
 }
+
+/* style for mune bar */
+
+.menu-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+}

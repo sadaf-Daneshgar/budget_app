@@ -1,7 +1,9 @@
 <header>
- <%= link_to root_path, class: "back-icon" do %></span><% end %>
-  <h2>CATEGORIES 📁</h2>
-  <i class="fa fa-search"></i>
+ <div class="menu-bar">
+    <span class="menu-icon">&#9776;</span>
+    <h2>CATEGORIES 📁</h2>
+    <i class="fa fa-search"></i>
+  </div>
 </header>
   <div class="category-list">
     <% @categories.each do |category| %>
