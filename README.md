@@ -1,5 +1,4 @@
 <h1 align="center">Budget App💰</h1>
-<img src="app/assets/images/" alt="database" width="100%" height="auto">
 
 ## 📗 Table of Contents
 
