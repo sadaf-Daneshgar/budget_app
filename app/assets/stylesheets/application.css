@@ -208,7 +208,6 @@ img {
 }
 
 input[type="text"] {
-  /* width: 100%; */
   padding: 18px;
   border: none;
   outline: none;
@@ -243,12 +242,6 @@ select {
 }
 
 /* style for mune bar */
-
-.menu-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
 .menu-icon {
   font-size: 24px;
