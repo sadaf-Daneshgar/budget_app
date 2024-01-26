@@ -1,0 +1,21 @@
+<header>
+  <%= link_to user_categories_path(@user), class: "back-icon" do %></span><% end %>
+  <h2>ADD CATEGORY</h2>
+</header>
+<div class='category-list'>
+  <div class="form">
+    <%= form_with(model: [@user, @category], local: true, method: :post) do |f| %>
+    <div>
+    <%= f.label :name %> <br />
+    <%= f.text_field :name, autocomplete: "off" %>
+    </div>
+    <div>
+    <%= f.label :icon %> <br />
+    <%= f.text_field :icon %>
+  </div>
+   <div>
+    <%= f.submit "Save", class: "button" %>
+   </div>
+  <% end %>
+</div> 
+</div>

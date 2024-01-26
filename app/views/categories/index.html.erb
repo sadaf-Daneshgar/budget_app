@@ -1,0 +1,26 @@
+<header>
+    <p class="menu-icon">&#9776;</p>
+    <h2>CATEGORIES 📁</h2>
+    <i class="fa fa-search"></i>
+</header>
+  <div class="category-list">
+    <% @categories.each do |category| %>
+     <%= link_to user_category_expenses_path(@user, category), class: "category-link" do %>
+      <div class="category">
+        <div class="category-icon">
+          <img src="<%= category.icon %>" alt="<%= category.name %>">
+        </div>
+        <div>
+          <p class=name><%= category.name %></p>
+          <p class="expense-date"><%= category.created_at.strftime("%m/%d/%Y") %></p>
+        </div>
+        <div class="amount">
+          <p><%= number_to_currency(category.expenses.sum(:amount)) %></p>
+        </div>
+      </div>
+    <% end %>
+    <% end %>
+  </div>
+ <%= link_to new_user_category_path(@user), class: "add-category" do %>
+  <span>Add Category</span>
+<% end %>
